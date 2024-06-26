@@ -1,0 +1,35 @@
+.footer {
+    background-color: #400B0B ;
+   color: #ffe6d8;
+   padding: 3em;
+   text-align: center;
+}
+
+.mylinks {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.mylinks li{
+    margin: 0 1em;
+}
+
+
+.mylinks li:hover{
+    color: #A61B1B;
+}
+
+.mylinks svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 2em;
+}
+
+.copyright span {
+    font-weight:500;
+    color: #DF2A23;
+}
