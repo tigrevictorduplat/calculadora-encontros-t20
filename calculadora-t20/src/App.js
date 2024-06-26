@@ -3,7 +3,7 @@ import Home from './components/pages/Home.js'
 import Dev from './components/pages/Dev.js'
 import JamboEditora from './components/pages/JamboEditora.js'
 import Encontros from './components/pages/Encontros.js'
-//import NovoEncontro from './components/pages/NovoEncontro.js'
+import NovoEncontro from './components/pages/NovoEncontro.js'
 
 import Container from './components/layout/Container.js'
 import Navbar from './components/layout/Navbar.js'
@@ -18,7 +18,8 @@ function App() {
         <Path path="/" element={<Home/>}/>
         <Path path="/about-dev" element={<Dev/>}/>
         <Path path="/about-jambo" element={<JamboEditora/>}/>
-        <Path path="/my-encounter" element={<Encontros/>}/>
+        <Path path="/my-encounters" element={<Encontros/>}/>
+        <Path path="/new-encounters" element={<NovoEncontro/>}/>
       </Switch>
       </Container>
       <Footer/>

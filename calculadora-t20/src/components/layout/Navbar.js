@@ -14,7 +14,7 @@ function Navbar() {
                 <li> <Link to="/"> Home </Link> </li>
                 <li> <Link to="/about-dev"> Dev </Link> </li>
                 <li> <Link to="/about-jambo"> Jambo Editora </Link> </li>
-                <li> <Link to="/my-encounter"> Meus Encontros </Link> </li>
+                <li> <Link to="/my-encounters"> Meus Encontros </Link> </li>
             </ul>
         </Container>
     </nav>

@@ -1,0 +1,11 @@
+.mybutton {
+    color: #fde3d4;
+    background-color: #400B0B;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.mybutton:hover {
+    color: #DF2A23;
+}
