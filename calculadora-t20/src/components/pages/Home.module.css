@@ -1,3 +1,5 @@
+@import url(../../styles/variables.css);
+
 .homewrap {
     width:100%;
     display: flex;
@@ -8,17 +10,17 @@
 }
 
 .homewrap h1 {
-    color: #400B0B;
+    color: var(--primary-color);
     font-size: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
 }
 .homewrap h1 span{
-    color: #fde3d4;
-    background-color: #400B0B;
+    color: var(--light-accent-color);
+    background-color: var(--primary-color);
     padding: 0.15em;
 }
 
 .homewrap p {
-    color: #590E0E;
-    margin: 0.5em 0;
+    color: var(--primary-color);
+    margin: 1em 0;
 }

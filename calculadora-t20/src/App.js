@@ -19,7 +19,7 @@ function App() {
         <Path path="/about-dev" element={<Dev/>}/>
         <Path path="/about-jambo" element={<JamboEditora/>}/>
         <Path path="/my-encounters" element={<Encontros/>}/>
-        <Path path="/new-encounters" element={<NovoEncontro/>}/>
+        <Path path="/new-encounter" element={<NovoEncontro/>}/>
       </Switch>
       </Container>
       <Footer/>

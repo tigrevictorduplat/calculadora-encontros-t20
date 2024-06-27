@@ -1,7 +1,10 @@
+@import url(../../styles/variables.css);
+
 .footer {
-    background-color: #400B0B ;
-   color: #ffe6d8;
-   padding: 3em;
+    background-color: var(--primary-color);
+   color: var(--light-accent-color);
+   padding: 2em;
+   padding-bottom: 3em; 
    text-align: center;
 }
 
@@ -17,7 +20,7 @@
 
 
 .mylinks li:hover{
-    color: #A61B1B;
+    color: var(--darker-hover-color);
 }
 
 .mylinks svg{
@@ -31,5 +34,5 @@
 
 .copyright span {
     font-weight:500;
-    color: #DF2A23;
+    color: var(--hover-color);
 }

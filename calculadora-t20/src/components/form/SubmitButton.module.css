@@ -4,9 +4,11 @@
     font-weight: 500;
     color: var(--light-accent-color);
     background-color: var(--primary-color);
-    padding: 0.5em 1em;
+    padding: 0.75em 1.25em;
     text-decoration: none;
+    border: none;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .mybutton:hover {

@@ -1,0 +1,24 @@
+@import url(../../styles/variables.css);
+
+.masterform{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+}
+
+.masterform label {
+    margin-bottom: 0.5em;
+    color: var(--dark-red);
+    font-weight: bold;
+}
+
+.masterform input {
+    padding: 0.8em;
+    border: none;
+    border-bottom: 1px solid var(--darker-hover-color);
+}
+
+.masterform input::placeholder{
+    color: var(--placeholder-color);
+}

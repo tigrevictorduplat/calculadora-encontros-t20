@@ -1,0 +1,18 @@
+@import url(../../styles/variables.css);
+
+.new_encounterwrap {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.new_encounterwrap h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.new_encounterwrap p {
+        color: var(--primary-color);
+        margin: 0.5em 0;
+}

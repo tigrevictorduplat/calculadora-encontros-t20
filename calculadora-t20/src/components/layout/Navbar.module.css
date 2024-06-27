@@ -1,8 +1,10 @@
+@import url(../../styles/variables.css);
+
 .navbar {
     display:flex;
     justify-content: space-around;
-    background-color: #400B0B;
-    padding: 1em;
+    background-color: var(--primary-color);
+    padding: 1em 0.5em;
 }
 
 .navlist {
@@ -18,12 +20,12 @@
 }
 
 .navlist li a {
-    color:#ffe6d8;
+    color: var(--light-accent-color);
     text-decoration: none;
 
 }
 
 .navlist li a:hover {
-    color:#A61B1B;
+    color: var(--hover-color);
 
 }

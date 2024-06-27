@@ -1,0 +1,21 @@
+@import url(../../styles/variables.css);
+
+.masterform{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+}
+
+.masterform label {
+    color: var(--dark-red);
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.masterform select {
+    padding: 0.8em;
+    color: var(--placeholder-color);
+    border: none;
+    border-bottom: 1px solid var(--darker-hover-color);
+}
