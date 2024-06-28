@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
 
-import ProjectForm from '../project/ProjectForm'
+import EncounterForm from '../project/EncounterForm'
 
 import styles from './NovoEncontro.module.css'
 
@@ -31,7 +31,7 @@ function NovoEncontro () {
         <div className={styles.new_encounterwrap}>
             <h1>Criar Encontros</h1>
             <p>Defina as Características Gerais e ND para então adicionar os Perigos</p>
-            <ProjectForm handleSubmit={createEncounter} btnText="Criar Encontro"/>
+            <EncounterForm handleSubmit={createEncounter} btnText="Criar Encontro"/>
         </div>
     )
 }

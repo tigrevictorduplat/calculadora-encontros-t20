@@ -5,9 +5,9 @@ import Select from '../form/Select.js'
 
 import SubmitButton from '../form/SubmitButton.js'
 
-import styles from './ProjectForm.module.css'
+import styles from './EncounterForm.module.css'
 
-function ProjectForm({handleSubmit, btnText, encounterData}) {
+function EncounterForm({handleSubmit, btnText, encounterData}) {
 const [categorias, setCategorias] = useState([])
 const [encounter, setEncounter] = useState(encounterData || {})
 
@@ -73,4 +73,4 @@ const submit = (e) => {
     )
 }
 
-export default ProjectForm
+export default EncounterForm

@@ -12,9 +12,9 @@ function Navbar() {
             </Link>
             <ul className={styles.navlist}>
                 <li> <Link to="/"> Home </Link> </li>
-                <li> <Link to="/about-dev"> Dev </Link> </li>
-                <li> <Link to="/about-jambo"> Jambo Editora </Link> </li>
                 <li> <Link to="/my-encounters"> Meus Encontros </Link> </li>
+                <li> <Link to="/about-jambo"> Jambo Editora </Link> </li>
+                <li> <Link to="/about-dev"> Dev </Link> </li>
             </ul>
         </Container>
     </nav>

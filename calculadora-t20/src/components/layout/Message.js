@@ -2,10 +2,12 @@ import {useState , useEffect } from 'react'
 
 import styles from './Message.module.css'
 
-function Message ({type, message, timeout}){
+function Message ({type, message, timeout = 3000}){
     const [visible, setVisible] = useState(false)
+    
 
     useEffect( () => {
+        
         if(!message){
             setVisible(false)
             return
@@ -19,7 +21,7 @@ function Message ({type, message, timeout}){
 
         return () => clearTimeout(timerMessage)
 
-    }, [message])
+    }, [message , timeout])
 
     return (
     <>
