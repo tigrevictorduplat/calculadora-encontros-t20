@@ -1,31 +1,52 @@
 {
-    "encounters" : [],
-    "categories": [
-       
-        {
-            "id": 1,
-            "name" : "Combate"
-        },
-        {
-            "id": 2,
-            "name" : "Desafio de Perícia"
-        },
-      
-        {
-            "id": 3,
-            "name" : "Embate Social"
-        },
-        {
-            "id": 4,
-            "name" : "Perigo Complexo"
-        },
-        {
-            "id": 5,
-            "name" : "Teste Estendido"
-        },
-        {
-            "id": 6,
-            "name" : "Chefe Final"
-        }
-    ]
+  "encounters": [
+    {
+      "id": "c8c3",
+      "titulo": "O Executor Arcano",
+      "nd_encontro": "8",
+      "category": {
+        "id": "1",
+        "name": "Combate"
+      },
+      "currentND": 0,
+      "challenges": []
+    },
+    {
+      "id": "5815",
+      "titulo": "O Eternauta",
+      "nd_encontro": "8",
+      "category": {
+        "id": "4",
+        "name": "Perigo Complexo"
+      },
+      "currentND": 0,
+      "challenges": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Combate"
+    },
+    {
+      "id": "2",
+      "name": "Desafio de Perícia"
+    },
+    {
+      "id": "3",
+      "name": "Embate Social"
+    },
+    {
+      "id": "4",
+      "name": "Perigo Complexo"
+    },
+    {
+      "id": "5",
+      "name": "Teste Estendido"
+    },
+    {
+      "id": "6",
+      "name": "Chefe Final"
+    }
+  ]
 }
