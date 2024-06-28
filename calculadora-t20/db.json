@@ -21,6 +21,24 @@
       },
       "currentND": 0,
       "challenges": []
+    },
+    {
+      "id": "9325",
+      "titulo": "Hidra Esquelética",
+      "nd_encontro": "8",
+      "currentND": 0,
+      "challenges": []
+    },
+    {
+      "id": "a075",
+      "titulo": "Viagem pelos Ermos",
+      "nd_encontro": "2",
+      "category": {
+        "id": "5",
+        "name": "Teste Estendido"
+      },
+      "currentND": 0,
+      "challenges": []
     }
   ],
   "categories": [

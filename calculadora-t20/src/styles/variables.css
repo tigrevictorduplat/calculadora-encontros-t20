@@ -1,11 +1,22 @@
 :root {
+    /* Main Colors */
     --primary-color:#400B0B ;
     --secondary-color: #8C0303;
     --red-accent-color: #F28D8D;
     --light-accent-color: #fde3d4;
     --background-color: #ecf0f1;
+    
+    /* Messages */
+    --success-alert: #defdd4cc;
+    --error-alert: #fdbd81cc;
+    --success-alert-text: #414b3d;
+    --error-alert-text: #ff5100;
+      
+    /* States */
     --hover-color: #DF2A23;
     --darker-hover-color: #aa0e09;
-    --dark-red:#260101;
     --placeholder-color: #ac615f;
+    
+      /* Misc */
+    --dark-red:#260101;
   }

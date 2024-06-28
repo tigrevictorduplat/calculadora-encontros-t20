@@ -21,7 +21,7 @@ function NovoEncontro () {
         })
         .then((response) => response.json())
         .then((data) => {
-            navigate('/my-encounters', {message: 'Novo Encontro adicionado à coleção!'})
+            navigate('/my-encounters', {state : {message: 'Novo Encontro adicionado à coleção!'}})
         })
         .catch((err) => console.log(err) ) 
 
