@@ -1,0 +1,107 @@
+@import url(../../styles/variables.css);
+
+.dashboard {
+    width: 24%;
+    padding: 1em;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.75em;
+    margin: 0.5%;
+}
+
+.dashboard h4 {
+    background-color: var(--primary-color);
+    color: var(--light-accent-color);
+    padding: 0.5em;
+    margin-bottom: 1.25em;
+    font-size: 1.25em;
+}
+
+.dashboard p {
+    color: var(--placeholder-color);
+    margin-bottom: 1em;
+}
+
+.dashboard p span {
+    font-weight: bold;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.category span {
+    display: block;
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    border: solid 1px;
+    background: lightgray;
+    margin-right: 5px;
+}
+
+.category .combat {
+    border-color: var(--dark-red);
+    background-color: var(--light-red);
+}
+
+.category .social {
+    border-color: var(--dark-blue);
+    background-color: var(--light-blue);
+}
+
+.category .skill_challenge {
+    border-color: var(--dark-orange);
+    background-color: var(--light-orange);
+}
+
+.category .complex_danger {
+    border-color: var(--dark-green);
+    background-color: var(--light-green);
+}
+
+.category .extended {
+    border-color: var(--dark-purple);
+    background-color: var(--light-purple);
+}
+
+.category .boss {
+    border-color: var(--primary-color);
+    background: linear-gradient(45deg, var(--dark-blue) 50%, var(--dark-purple) 50%);
+}
+
+.dashboard_actions {
+    margin-top: 1.25em;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard_actions a,
+.dashboard_actions button {
+    padding: 0.6em 1em;
+    text-decoration: none;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-accent-color);
+    font-size: 0.9em;
+    margin-right: 0.8em;
+    cursor: pointer;
+    border: 1px solid var(--dark-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.5s;
+
+}
+
+.dashboard_actions svg {
+    font-size: 1.75em;
+    margin-right: 0.5em;
+}
+
+.dashboard_actions a:hover,
+.dashboard_actions button:hover {
+    background-color: var(--light-accent-color);
+    color: var(--primary-color);
+}

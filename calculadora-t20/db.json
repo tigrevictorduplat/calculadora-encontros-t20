@@ -2,8 +2,8 @@
   "encounters": [
     {
       "id": "c8c3",
-      "titulo": "O Executor Arcano",
-      "nd_encontro": "8",
+      "titulo": "Matilha do Inferno",
+      "nd_encontro": "3",
       "category": {
         "id": "1",
         "name": "Combate"
@@ -13,19 +13,19 @@
     },
     {
       "id": "5815",
-      "titulo": "O Eternauta",
-      "nd_encontro": "8",
+      "titulo": "Covil do Dragão do Fim",
+      "nd_encontro": "12",
       "category": {
-        "id": "4",
-        "name": "Perigo Complexo"
+        "id": "6",
+        "name": "Chefe Final"
       },
       "currentND": 0,
       "challenges": []
     },
     {
       "id": "9325",
-      "titulo": "Hidra Esquelética",
-      "nd_encontro": "8",
+      "titulo": "Cardume de Piranhas",
+      "nd_encontro": "3",
       "category": {
         "id": "1",
         "name": "Combate"

@@ -19,4 +19,13 @@
     
       /* Misc */
     --dark-red:#260101;
+    --light-red: #fb2e6ccc;
+    --dark-blue: #2700a7;
+    --light-blue: #497dffcc;
+    --dark-purple: #7500a7;
+    --light-purple: #d092f2cc;
+    --dark-orange: #732600;
+    --light-orange: #f5a02bcc;
+    --dark-green: #217300;
+    --light-green: #6dcc00cc;
   }

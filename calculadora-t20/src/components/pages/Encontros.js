@@ -1,6 +1,8 @@
 import {useLocation} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
+import { GiDeathNote } from "react-icons/gi";
+
 import styles from './Encontro.module.css'
 
 import Message from "../layout/Message"
@@ -34,7 +36,7 @@ function Encontros () {
     <div className={styles.dashboard_container}>
         <div className={styles.dashboard_title}>
             <h1>Meus Encontros</h1>
-            <LinkButton to="/new-encounter" text="Novo Encontro"/>
+            <LinkButton to="/new-encounter" text="Novo Encontro" icon={<GiDeathNote/>} /> 
         </div>
         {message && <Message message={message} type="success" timeout={3500}/>}
         <Container customClass="start">
