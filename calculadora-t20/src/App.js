@@ -4,6 +4,7 @@ import Dev from './components/pages/Dev.js'
 import JamboEditora from './components/pages/JamboEditora.js'
 import Encontros from './components/pages/Encontros.js'
 import NovoEncontro from './components/pages/NovoEncontro.js'
+import VerEncontro from './components/pages/VerEncontro.js'
 
 import Container from './components/layout/Container.js'
 import Navbar from './components/layout/Navbar.js'
@@ -20,6 +21,7 @@ function App() {
         <Path path="/about-jambo" element={<JamboEditora/>}/>
         <Path path="/my-encounters" element={<Encontros/>}/>
         <Path path="/new-encounter" element={<NovoEncontro/>}/>
+        <Path path="/encounter/:id" element={<VerEncontro/>}/>
       </Switch>
       </Container>
       <Footer/>

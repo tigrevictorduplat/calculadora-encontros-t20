@@ -47,7 +47,7 @@ function DashboardCard({id, title, nd, category, handleRemove}) {
                 <span className={convertCategory(category)}></span> {category}
             </p>
             <div className={styles.dashboard_actions}>
-                <Link to="/">
+                <Link to={`/encounter/${id}`}>
                     <GiSpinningSword/> Editar
                 </Link>
                 <button onClick={remove}>
