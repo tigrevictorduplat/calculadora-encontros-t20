@@ -6,6 +6,10 @@ import { GiBurningSkull, GiSpinningSword } from "react-icons/gi";
 import styles from './DashboardCard.module.css'
 
 function DashboardCard({id, title, nd, category, handleRemove}) {
+    const remove = (e) => {
+            e.preventDefault()
+            handleRemove(id)
+    }
     let categoryStyle = ""
     function convertCategory(category) {
         switch (category) {
@@ -46,7 +50,7 @@ function DashboardCard({id, title, nd, category, handleRemove}) {
                 <Link to="/">
                     <GiSpinningSword/> Editar
                 </Link>
-                <button>
+                <button onClick={remove}>
                    <GiBurningSkull/> Excluir
                 </button>
             </div>
