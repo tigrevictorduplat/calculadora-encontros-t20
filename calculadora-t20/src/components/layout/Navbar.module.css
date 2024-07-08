@@ -1,6 +1,7 @@
 @import url(../../styles/variables.css);
 
 .navbar {
+    width: 100%;
     display:flex;
     justify-content: space-around;
     background-color: var(--primary-color);

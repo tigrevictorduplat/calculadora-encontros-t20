@@ -1,0 +1,61 @@
+@import url(../../styles/variables.css);
+
+.view_container {
+    padding: 2em;
+    width: 100%;
+}
+
+.view_container h1,
+.view_container h2,
+.view_container p {
+    margin-bottom: 0.5em;
+}
+
+.view_container h1 {
+    background-color: var(--primary-color);
+    color: var(--light-accent-color);
+    padding: 0.5em;
+    border-bottom: 1px solid var(--light-accent-color);
+}
+
+.view_container span {
+    font-weight: bold;
+}
+
+.info_block, 
+.challenge_block {
+    border-bottom: 1px solid var(--placeholder-color);
+  padding-bottom: 1.2em;
+  margin-bottom: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.details{
+    width: 100%;
+}
+
+.mybutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: var(--light-accent-color);
+    background-color: var(--primary-color);
+    padding: 0.25em;
+    margin-bottom: 0.25em;
+    text-decoration: none;
+    transition: 0.5s;
+
+    cursor: pointer;
+    border: none;
+}
+.mybutton svg {
+    font-size: 1.5em;
+}
+
+.mybutton:hover {
+    background-color: var(--light-accent-color);
+    color: var(--primary-color);
+}

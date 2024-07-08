@@ -9,8 +9,8 @@ function NovoEncontro () {
 
     function createEncounter(encounter){
         // Empty encounter attributes
-        encounter.currentND = 0
-        encounter.challenges = []
+        encounter.nd_atual = 0
+        encounter.desafios = []
     
         fetch('http://localhost:5000/encounters', {
             method : 'POST',

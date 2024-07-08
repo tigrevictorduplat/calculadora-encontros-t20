@@ -1,6 +1,6 @@
 import styles from './Input.module.css'
 
-function Input({type, text, title, name, placeholder, handleOnChange, value}) {
+function Input({type, title, name, placeholder, handleOnChange, value}) {
     return (
         <div className={styles.masterform}>
             <label htmlFor={name}>{title}: </label>

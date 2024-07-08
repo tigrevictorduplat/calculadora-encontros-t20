@@ -8,8 +8,8 @@
         "id": "1",
         "name": "Combate"
       },
-      "currentND": 0,
-      "challenges": []
+      "nd_atual": 0,
+      "desafios": []
     },
     {
       "id": "5815",
@@ -19,8 +19,8 @@
         "id": "6",
         "name": "Chefe Final"
       },
-      "currentND": 0,
-      "challenges": []
+      "nd_atual": 0,
+      "desafios": []
     },
     {
       "id": "039a",
@@ -30,8 +30,8 @@
         "id": "4",
         "name": "Perigo Complexo"
       },
-      "currentND": 0,
-      "challenges": []
+      "nd_atual": 0,
+      "desafios": []
     },
     {
       "id": "3b38",
@@ -41,8 +41,8 @@
         "id": "3",
         "name": "Embate Social"
       },
-      "currentND": 0,
-      "challenges": []
+      "nd_atual": 0,
+      "desafios": []
     }
   ],
   "categories": [
