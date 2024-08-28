@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './Input.module.css'
 
 function Input({type, title, name, placeholder, handleOnChange, value}) {
@@ -7,7 +10,7 @@ function Input({type, title, name, placeholder, handleOnChange, value}) {
             <input
                 type={type}
                 name={name}
-                ide={name}
+                id={name}
                 placeholder={placeholder}
                 onChange={handleOnChange}
                 value={value}
@@ -15,5 +18,20 @@ function Input({type, title, name, placeholder, handleOnChange, value}) {
         </div>
     )
 }
+
+Input.propTypes = {
+    type: PropTypes.string.isRequired, 
+    title: PropTypes.string.isRequired, 
+    name : PropTypes.string.isRequired, 
+    placeholder: PropTypes.string, 
+    handleOnChange: PropTypes.func, 
+    value: PropTypes.string
+}
+
+Input.defaultProps = {
+    handleOnChange: undefined, 
+    value: ''
+}
+
 
 export default Input
