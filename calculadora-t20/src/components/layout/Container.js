@@ -7,7 +7,7 @@ function Container (props) {
     return  <div className={`${styles.container} ${styles[props.customClass]}`} >{props.children}</div>
 }
 
-Container.propType = {
+Container.propTypes = {
     customClass: PropTypes.oneOf([
         ['start', 'column','min-height' ]
     ])
