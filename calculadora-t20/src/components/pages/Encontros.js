@@ -15,7 +15,7 @@ function Encontros () {
     const [myencounterList, setEncounters] = useState([])
     const [toggleLoading, setLoadingState] = useState(true)
     const [localMessage, setLocalMessage] = useState()
-    const localMessageTimeout = 3500;
+    const localMessageTimeout = 3000;
 
     const location = useLocation()
     let message = ''
@@ -68,7 +68,7 @@ function Encontros () {
             <LinkButton to="/new-encounter" text="Novo Encontro" icon={<GiDeathNote/>} /> 
         </div>
         
-        {message && <Message message={message} type="success" timeout={3500}/>}
+        {message && <Message message={message} type="success" timeout={localMessageTimeout}/>}
         {localMessage && (
             <Message message={localMessage} type="success" timeout={localMessageTimeout}/>
         )}

@@ -3,25 +3,22 @@
 .view_container {
     padding: 2em;
     width: 100%;
-}
 
-.view_container h1,
-.view_container h2,
-.view_container p {
+h1, h2,  p {
     margin-bottom: 0.5em;
 }
 
-.view_container h1 {
+h1 {
     background-color: var(--primary-color);
     color: var(--light-accent-color);
     padding: 0.5em;
     border-bottom: 1px solid var(--light-accent-color);
 }
-
-.view_container span {
+ span {
     font-weight: bold;
 }
 
+}
 .info_block, 
 .challenge_block {
     border-bottom: 1px solid var(--placeholder-color);
@@ -37,9 +34,7 @@
 }
 
 .mybutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 3.5em;
     font-weight: 500;
     color: var(--light-accent-color);
     background-color: var(--primary-color);
@@ -50,12 +45,14 @@
 
     cursor: pointer;
     border: none;
-}
-.mybutton svg {
+
+ svg {
     font-size: 1.5em;
 }
 
-.mybutton:hover {
+&:hover {
     background-color: var(--light-accent-color);
     color: var(--primary-color);
+}
+
 }

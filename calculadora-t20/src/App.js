@@ -1,14 +1,14 @@
 import {BrowserRouter as Router, Routes as Switch, Route as Path} from 'react-router-dom'
-import Home from './components/pages/Home.js'
-import Dev from './components/pages/Dev.js'
-import JamboEditora from './components/pages/JamboEditora.js'
-import Encontros from './components/pages/Encontros.js'
-import NovoEncontro from './components/pages/NovoEncontro.js'
-import VerEncontro from './components/pages/VerEncontro.js'
+import Home from './components/pages/Home'
+import Dev from './components/pages/Dev'
+import JamboEditora from './components/pages/JamboEditora'
+import Encontros from './components/pages/Encontros'
+import NovoEncontro from './components/pages/NovoEncontro'
+import VerEncontro from './components/pages/VerEncontro'
 
-import Container from './components/layout/Container.js'
-import Navbar from './components/layout/Navbar.js'
-import Footer from './components/layout/Footer.js'
+import Container from './components/layout/Container'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 
 function App() {
   return (
