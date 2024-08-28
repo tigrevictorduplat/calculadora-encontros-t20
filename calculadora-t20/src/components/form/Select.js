@@ -1,6 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
 import styles from './Select.module.css'
 
 function Select({title, name, options, handleOnChange, value}) {
@@ -21,27 +18,5 @@ function Select({title, name, options, handleOnChange, value}) {
         </div>
     )
 }
-
-Select.propTypes = {
-    title: PropTypes.string.isRequired, 
-    name: PropTypes.string.isRequired, 
-    options: PropTypes.arrayOf(
-        PropTypes.shape({
-          id:   PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-        name: PropTypes.string.isRequired
-    })
-    ), 
-    handleOnChange: PropTypes.func, 
-    value : PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-      ])
-}
-
-Select.defaultProps = {
-    handleOnChange: undefined,  
-    value: '',                 
-  };
-
 
 export default Select
