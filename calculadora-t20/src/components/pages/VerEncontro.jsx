@@ -1,3 +1,5 @@
+import { parse, v4 as uuidv4} from 'uuid'
+
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 
@@ -7,6 +9,7 @@ import Loading from "../layout/Loading"
 import Container from "../layout/Container"
 import EncounterForm from "../project/EncounterForm"
 import Message from "../layout/Message"
+import ChallengeForm from "../challenge/ChallengeForm"
 
 function VerEncontro () {
     const {id} = useParams()
@@ -58,6 +61,14 @@ function VerEncontro () {
         .catch( (error) => console.log(error))
     }
 
+    function createChallenge(encounter){
+        const challenge = encounter.challenges
+        const lastChallenge = challenge[challenge.lenght -1]
+        lastChallenge.id = uuidv4()
+
+        //ID Criado, verifique a aula #34 às 12:40
+    }
+
     function toggleView(){
         toggleEditInfo(!editInfoState)
     }
@@ -74,7 +85,7 @@ function VerEncontro () {
         <div className={styles.info_block}>
             <h1>{encounter.titulo} - ND{encounter.nd_encontro} </h1>
             <button className={styles.mybutton} onClick={toggleView}>
-                {editInfoState? "Concluir Edição":" Editar Encontro"}
+                {editInfoState? "Cancelar Edição":" Editar Encontro"}
             </button>
             { !editInfoState? (
                 <div className={styles.details}>
@@ -99,11 +110,17 @@ function VerEncontro () {
         <div className={styles.challenge_block}>
             <h2>Adicione um Desafio</h2>
             <button className={styles.mybutton} onClick={toggleChallenge}>
-                {editChallengeState? "Concluir Edição":"Adicionar Desafio"}
+                {editChallengeState? "Cancelar Edição":"Adicionar Desafio"}
             </button>
-            {editChallengeState && 
-            <div className={styles.details}> Formulário Desafio</div>
-            }
+            <div className={styles.details}> 
+                {editChallengeState &&  <ChallengeForm
+                    handleSubmit={createChallenge}
+                    btnText={"Adicionar Desafio"}
+                    challengeData={encounter}
+                />
+                }
+            </div>
+            
         </div>
         <h2>Desafios</h2>
         <Container customClass="start">

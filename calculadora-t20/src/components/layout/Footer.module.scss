@@ -12,9 +12,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-   &:hover{
-        color: var(--darker-hover-color);
-    }
+   
     
     li{
         margin: 0 1em;
@@ -23,13 +21,16 @@
     svg{
         font-size: 1.5em;
         cursor: pointer;
+         &:hover{
+            color: var(--darker-hover-color);
+        }
     }
 }
 .copyright {
     margin-top: 2em;
  span {
     font-weight:500;
-    color: var(--hover-color);
+    color: var(--darker-hover-color);
 }
 
 }

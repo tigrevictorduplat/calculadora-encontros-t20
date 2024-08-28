@@ -35,32 +35,32 @@
         margin-right: 5px;
     }
 
-    &.combat {
+    .combat {
         border-color: var(--dark-red);
         background-color: var(--light-red);
     }
 
-    &.social {
+    .social {
         border-color: var(--dark-blue);
         background-color: var(--light-blue);
     }
 
-    &.skill_challenge {
+    .skill_challenge {
         border-color: var(--dark-orange);
         background-color: var(--light-orange);
     }
 
-    &.complex_danger {
+    .complex_danger {
         border-color: var(--dark-green);
         background-color: var(--light-green);
     }
 
-    &.extended {
+    .extended {
         border-color: var(--dark-purple);
         background-color: var(--light-purple);
     }
 
-    &.boss {
+    .boss {
         border-color: var(--primary-color);
         background: linear-gradient(45deg, var(--dark-blue) 50%, var(--dark-purple) 50%);
     }
@@ -97,6 +97,7 @@
         font-size: 1.75em;
         margin-right: 0.5em;
     }
+
 
 
 }
