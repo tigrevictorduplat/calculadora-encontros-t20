@@ -1,4 +1,4 @@
-import styles from './Select.module.css'
+import styles from './Select.module.scss'
 
 function Select({title, name, options, handleOnChange, value}) {
     return (

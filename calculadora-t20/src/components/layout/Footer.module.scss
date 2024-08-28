@@ -1,4 +1,4 @@
-@import url(../../styles/variables.css);
+@import url(../../styles/variables.scss);
 
 .footer {
     background-color: var(--primary-color);
@@ -12,27 +12,24 @@
     display: flex;
     justify-content: center;
     list-style: none;
+   &:hover{
+        color: var(--darker-hover-color);
+    }
+    
+    li{
+        margin: 0 1em;
+    }
+    
+    svg{
+        font-size: 1.5em;
+        cursor: pointer;
+    }
 }
-
-.mylinks li{
-    margin: 0 1em;
-}
-
-
-.mylinks li:hover{
-    color: var(--darker-hover-color);
-}
-
-.mylinks svg{
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
 .copyright {
     margin-top: 2em;
-}
-
-.copyright span {
+ span {
     font-weight:500;
     color: var(--hover-color);
+}
+
 }

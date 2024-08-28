@@ -1,4 +1,4 @@
-@import url(../../styles/variables.css);
+@import url(../../styles/variables.scss);
 
 .mybutton {
     font-weight: 500;
@@ -9,8 +9,7 @@
     border: none;
     transition: 0.5s;
     cursor: pointer;
-}
-
-.mybutton:hover {
-    color: var(--hover-color);
+    &:hover {
+        color: var(--hover-color);
+    }
 }

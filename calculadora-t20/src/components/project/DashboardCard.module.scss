@@ -1,0 +1,102 @@
+@import url(../../styles/variables.scss);
+
+.dashboard {
+    width: 24%;
+    padding: 1em;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.75em;
+    margin: 0.5%;
+
+    h4 {
+        background-color: var(--primary-color);
+        color: var(--light-accent-color);
+        padding: 0.5em;
+        margin-bottom: 1.25em;
+        font-size: 1.25em;
+    }
+     p {
+        color: var(--placeholder-color);
+        margin-bottom: 1em;
+        span {
+            font-weight: bold;
+        } 
+    }
+}
+.category {
+    display: flex;
+    align-items: center;
+    span {
+        display: block;
+        width: 0.75em;
+        height: 0.75em;
+        border-radius: 50%;
+        border: solid 1px;
+        background: lightgray;
+        margin-right: 5px;
+    }
+
+    &.combat {
+        border-color: var(--dark-red);
+        background-color: var(--light-red);
+    }
+
+    &.social {
+        border-color: var(--dark-blue);
+        background-color: var(--light-blue);
+    }
+
+    &.skill_challenge {
+        border-color: var(--dark-orange);
+        background-color: var(--light-orange);
+    }
+
+    &.complex_danger {
+        border-color: var(--dark-green);
+        background-color: var(--light-green);
+    }
+
+    &.extended {
+        border-color: var(--dark-purple);
+        background-color: var(--light-purple);
+    }
+
+    &.boss {
+        border-color: var(--primary-color);
+        background: linear-gradient(45deg, var(--dark-blue) 50%, var(--dark-purple) 50%);
+    }
+
+}
+
+.dashboard_actions {
+    margin-top: 1.25em;
+    display: flex;
+    align-items: center;
+
+    a, button {
+        padding: 0.6em 1em;
+        text-decoration: none;
+        border: none;
+        background-color: var(--primary-color);
+        color: var(--light-accent-color);
+        font-size: 0.9em;
+        margin-right: 0.8em;
+        cursor: pointer;
+        border: 1px solid var(--dark-accent-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: var(--light-accent-color);
+            color: var(--primary-color);
+        }
+
+    }
+    svg {
+        font-size: 1.75em;
+        margin-right: 0.5em;
+    }
+
+
+}

@@ -1,4 +1,4 @@
-import styles from './Home.module.css'
+import styles from './Home.module.scss'
 
 import valkaria from '../../img/valkaria-fullbody.png'
 import LinkButton from '../layout/LinkButton'

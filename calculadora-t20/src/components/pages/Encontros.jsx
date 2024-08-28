@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { GiDeathNote , GiDiceTwentyFacesOne
 } from "react-icons/gi";
 
-import styles from './Encontros.module.css'
+import styles from './Encontros.module.scss'
 
 import Message from "../layout/Message"
 import Container from "../layout/Container"

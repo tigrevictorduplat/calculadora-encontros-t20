@@ -2,7 +2,7 @@ import {useNavigate} from 'react-router-dom'
 
 import EncounterForm from '../project/EncounterForm'
 
-import styles from './NovoEncontro.module.css'
+import styles from './NovoEncontro.module.scss'
 
 function NovoEncontro () {
     const navigate = useNavigate()

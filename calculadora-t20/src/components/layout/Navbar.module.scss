@@ -1,0 +1,29 @@
+@import url(../../styles/variables.scss);
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 1em 0.5em;
+
+    img {
+        width: 5em;
+    }
+}
+
+.navlist {
+    display:flex;
+    list-style: none;
+    align-items: center;
+ li{
+    margin : 0 0.5em;
+    a {
+        color: var(--light-accent-color);
+        text-decoration: none;
+        &:hover {
+                color: var(--hover-color);
+
+            }
+        }
+    }
+}

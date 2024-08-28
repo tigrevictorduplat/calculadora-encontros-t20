@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import { GiBurningSkull, GiSpinningSword } from "react-icons/gi";
 
 
-import styles from './DashboardCard.module.css'
+import styles from './DashboardCard.module.scss'
 
 function DashboardCard({id, title, nd, category, handleRemove}) {
     const remove = (e) => {

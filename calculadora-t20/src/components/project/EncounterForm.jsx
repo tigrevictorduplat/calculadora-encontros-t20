@@ -1,11 +1,11 @@
 import {useState, useEffect} from 'react'
 
-import Input from '../form/Input.js'
-import Select from '../form/Select.js'
+import Input from '../form/Input'
+import Select from '../form/Select'
 
-import SubmitButton from '../form/SubmitButton.js'
+import SubmitButton from '../form/SubmitButton'
 
-import styles from './EncounterForm.module.css'
+import styles from './EncounterForm.module.scss'
 
 function EncounterForm({handleSubmit, btnText, encounterData}) {
 const [categorias, setCategorias] = useState([])

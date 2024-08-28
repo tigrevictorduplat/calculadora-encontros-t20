@@ -2,13 +2,13 @@ import { Link } from "react-router-dom"
 
 import Container from "./Container"
 import logo from '../../img/valkaria.png'
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.scss'
 function Navbar() {
     return (
     <nav className={styles.navbar}>
-        <Container>
+        <Container customClass={"nav"}>
             <Link to="/">
-            <img src={logo} alt="Calculadora de Valkaria" width="15%"/>
+            <img src={logo} alt="Calculadora de Valkaria" />
             </Link>
             <ul className={styles.navlist}>
                 <li> <Link to="/"> Home </Link> </li>

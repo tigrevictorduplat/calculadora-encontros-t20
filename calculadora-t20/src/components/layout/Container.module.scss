@@ -4,17 +4,23 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
-}
 
 .min-height {
     min-height: 75%;
 }
 
-.start {
+&.start {
     justify-content: flex-start;
 }
 
-.column {
+&.column {
     flex-direction: column;
     justify-content: flex-start;
+}
+
+&.nav {
+    width: 100%;
+    padding: 0 2em;
+}
+
 }
