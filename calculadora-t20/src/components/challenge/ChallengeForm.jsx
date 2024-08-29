@@ -1,7 +1,6 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 import Input from '../form/Input'
-import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 
 import styles from '../project/EncounterForm.module.scss'
@@ -12,12 +11,12 @@ const [challenge, setChallenge] = useState({})
 
 const submit = (e) => {
     e.preventDefault()
-    encounterData.challenges.push(challenge)
+    encounterData.desafios.push(challenge)
     handleSubmit(encounterData)
 }
 
     function handleInputOnChange(e) {
-        setChallenge( { ...challenge, [e.target.nome] : e.target.value})        
+        setChallenge( { ...challenge, [e.target.name] : e.target.value})        
     }
 
 
@@ -26,21 +25,21 @@ const submit = (e) => {
             <Input
             type={"text"}
             title={"Nome Desafio"}
-            name="nome"
+            name={"nome"}
             placeholder={"Insira o nome do Desafio ou Criatura"}
             handleOnChange={handleInputOnChange}
             />
             <Input
             type={"number"}
             title={"ND do Desafio/Criatura"}
-            name="nd_challenge"
+            name={"nd_desafio"}
             placeholder={"Insira o Nível de Desafio da Criatura"}
             handleOnChange={handleInputOnChange}
             />
             <Input
             type={"text"}
             title={"Descrição do Desafio ou Criatura"}
-            name="description"
+            name={"descricao"}
             placeholder={"Insira uma descrição para o Desafio ou Criatura"}
             handleOnChange={handleInputOnChange}
             />

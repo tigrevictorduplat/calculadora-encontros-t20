@@ -2,7 +2,7 @@
 
 .view_container {
     padding: 2em;
-    width: 100%;
+    width: 100vw;
 
 h1, h2,  p {
     margin-bottom: 0.5em;
@@ -16,6 +16,13 @@ h1 {
 }
  span {
     font-weight: bold;
+}
+
+.vazio {
+    padding: 0.25em 0.5em;
+     font-weight: normal;
+     color: var(--primary-color);
+     background-color: var(--light-accent-color);
 }
 
 }

@@ -79,7 +79,7 @@ function Encontros () {
                     id={encounter.id}
                     title={encounter.titulo}
                     nd={encounter.nd_encontro}
-                    category={encounter.category?.name}
+                    categoria={encounter.categoria?.nome}
                     key={encounter.id}
                     handleRemove={deleteEncounterByID}
                 />

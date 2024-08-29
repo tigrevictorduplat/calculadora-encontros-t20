@@ -34,11 +34,12 @@ const submit = (e) => {
 
     function handleSelectOnChange(e) {
         setEncounter( { ...encounter, 
-            category : {
+            categoria : {
                 id: e.target.value,
-                name: e.target.options[e.target.selectedIndex].text
+                nome: e.target.options[e.target.selectedIndex].text
             }
-        })        
+        })
+        console.log(e.target.selectedIndex)      
     }
 
     return (
@@ -64,7 +65,7 @@ const submit = (e) => {
             title="Escolha uma Categoria"
             options={categorias}
             handleOnChange={handleSelectOnChange}
-            value={encounter.category ? encounter.category.id : '' }
+            value={encounter.categoria ? encounter.categoria.id : '' }
             
             />
            <SubmitButton text={btnText}/>

@@ -7,7 +7,7 @@ function Input({type, title, name, placeholder, handleOnChange, value}) {
             <input
                 type={type}
                 name={name}
-                ide={name}
+                id={name}
                 placeholder={placeholder}
                 onChange={handleOnChange}
                 value={value}

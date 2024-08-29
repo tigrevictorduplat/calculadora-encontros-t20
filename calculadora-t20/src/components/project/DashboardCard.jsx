@@ -5,36 +5,36 @@ import { GiBurningSkull, GiSpinningSword } from "react-icons/gi";
 
 import styles from './DashboardCard.module.scss'
 
-function DashboardCard({id, title, nd, category, handleRemove}) {
+function DashboardCard({id, title, nd, categoria, handleRemove}) {
     const remove = (e) => {
             e.preventDefault()
             handleRemove(id)
     }
-    let categoryStyle = ""
-    function convertCategory(category) {
-        switch (category) {
+    let categoriaStyle = ""
+    function convertCategoria(categoria) {
+        switch (categoria) {
             case  "Combate":
-                 categoryStyle = styles.combat
+                 categoriaStyle = styles.combat
                 break;
             case  "Embate Social":
-                 categoryStyle = styles.social
+                 categoriaStyle = styles.social
                 break;
             case  "Perigo Complexo":
-                categoryStyle = styles.complex_danger
+                categoriaStyle = styles.complex_danger
                break;
             case  "Desafio de Perícia":
-                categoryStyle = styles.skill_challenge
+                categoriaStyle = styles.skill_challenge
                break;
             case  "Teste Estendido":
-                categoryStyle = styles.extended
+                categoriaStyle = styles.extended
                break;
             case  "Chefe Final":
-               categoryStyle = styles.boss
+               categoriaStyle = styles.boss
               break;
             default:
                 break;
         }
-        return categoryStyle
+        return categoriaStyle
     }
 
     return (
@@ -43,8 +43,8 @@ function DashboardCard({id, title, nd, category, handleRemove}) {
             <p>
                 <span>Nível de Desafio</span> - {nd}
             </p>
-            <p className={styles.category}>
-                <span className={convertCategory(category)}></span> {category}
+            <p className={styles.categoria}>
+                <span className={convertCategoria(categoria)}></span> {categoria}
             </p>
             <div className={styles.dashboard_actions}>
                 <Link to={`/encounter/${id}`}>

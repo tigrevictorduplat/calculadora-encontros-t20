@@ -3,21 +3,21 @@
     {
       "id": "c8c3",
       "titulo": "Matilha do Inferno",
-      "nd_encontro": "3",
-      "category": {
+      "nd_encontro": "6",
+      "categoria": {
         "id": "1",
-        "name": "Combate"
+        "nome": "Combate"
       },
-      "nd_atual": 0,
+      "nd_atual": 4,
       "desafios": []
     },
     {
       "id": "5815",
       "titulo": "Covil do Dragão da Luz",
-      "nd_encontro": "11",
-      "category": {
+      "nd_encontro": "12",
+      "categoria": {
         "id": "6",
-        "name": "Chefe Final"
+        "nome": "Chefe Final"
       },
       "nd_atual": 0,
       "desafios": []
@@ -26,9 +26,9 @@
       "id": "039a",
       "titulo": "Sala Esmagadora",
       "nd_encontro": "4",
-      "category": {
+      "categoria": {
         "id": "4",
-        "name": "Perigo Complexo"
+        "nome": "Perigo Complexo"
       },
       "nd_atual": 0,
       "desafios": []
@@ -37,9 +37,9 @@
       "id": "3b38",
       "titulo": "Tribunal de Khalmyr",
       "nd_encontro": "4",
-      "category": {
+      "categoria": {
         "id": "3",
-        "name": "Embate Social"
+        "nome": "Embate Social"
       },
       "nd_atual": 0,
       "desafios": []
@@ -48,27 +48,27 @@
   "categories": [
     {
       "id": "1",
-      "name": "Combate"
+      "nome": "Combate"
     },
     {
       "id": "2",
-      "name": "Desafio de Perícia"
+      "nome": "Desafio de Perícia"
     },
     {
       "id": "3",
-      "name": "Embate Social"
+      "nome": "Embate Social"
     },
     {
       "id": "4",
-      "name": "Perigo Complexo"
+      "nome": "Perigo Complexo"
     },
     {
       "id": "5",
-      "name": "Teste Estendido"
+      "nome": "Teste Estendido"
     },
     {
       "id": "6",
-      "name": "Chefe Final"
+      "nome": "Chefe Final"
     }
   ]
 }

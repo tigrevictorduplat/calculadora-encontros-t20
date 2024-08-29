@@ -10,10 +10,12 @@ import Container from "../layout/Container"
 import EncounterForm from "../project/EncounterForm"
 import Message from "../layout/Message"
 import ChallengeForm from "../challenge/ChallengeForm"
+import ChallengeCard from '../challenge/ChallengeCard'
 
 function VerEncontro () {
     const {id} = useParams()
     const [encounter, setEncounter] = useState([]) 
+    const [challenges, setChallenges] = useState([])
     const [ editInfoState, toggleEditInfo] = useState(false)
     const [ editChallengeState, toggleChallengeInfo] = useState(false)
     const [message, setMessage] = useState(false)
@@ -29,6 +31,7 @@ function VerEncontro () {
             .then( response => response.json())
             .then( data => {
                setEncounter(data)
+               setChallenges(data.desafios)
             })
             .catch( (error) => console.log(error)) 
         }, 300);
@@ -62,11 +65,71 @@ function VerEncontro () {
     }
 
     function createChallenge(encounter){
-        const challenge = encounter.challenges
-        const lastChallenge = challenge[challenge.lenght -1]
-        lastChallenge.id = uuidv4()
+        setMessage("")
+        const desafio = encounter.desafios
+        const lastDesafio = desafio[desafio.length-1] 
 
-        //ID Criado, verifique a aula #34 às 12:40
+        lastDesafio.id = uuidv4()
+        const lastDesafioND = lastDesafio.nd_desafio 
+        const newND = parseInt(encounter.nd_atual) + parseInt(lastDesafioND)
+
+        //MaxND Validation
+        if (newND > parseInt(encounter.nd_encontro)) {
+            setMessage("Valor de ND ultrapassado! Tente adicionar um Desafio de ND menor!")
+            setType("error")
+            toggleChallenge()
+            desafio.pop()
+            return false
+        }
+        encounter.nd_atual = newND
+
+        //Update
+        fetch(`http://localhost:5000/encounters/${encounter.id}` , {
+            method : 'PATCH',
+            headers : {
+                'Content-Type' : 'application/json'
+            },
+            body : JSON.stringify(encounter),
+            })
+            .then( response => response.json())
+            .then( data => {
+            toggleChallenge()
+            setEncounter(data)
+            setChallenges(data.desafios)
+            setMessage("Desafio Adicionado com Sucesso!")
+            setType("success")
+            })
+    }
+
+    function deleteChallengeByID(id,nd){
+        setMessage("")
+        const challengesUpdated = encounter.desafios.filter(
+            (desafio) => desafio.id !== id
+        )
+        const encounterUpdated = encounter
+        
+        encounterUpdated.desafios = challengesUpdated
+        encounterUpdated.nd_atual = parseInt(encounterUpdated.nd_atual) - parseInt(nd)
+        
+        
+
+
+        fetch( `http://localhost:5000/encounters/${encounter.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify(encounterUpdated)
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            setEncounter(encounterUpdated)
+            setChallenges(challengesUpdated)
+            setType("success")
+            setMessage("Desafio removido com sucesso!")
+            
+        })
+        .catch(error => console.log(error))
     }
 
     function toggleView(){
@@ -90,7 +153,7 @@ function VerEncontro () {
             { !editInfoState? (
                 <div className={styles.details}>
                     <p>
-                        <span>Categoria:</span> {encounter.category.name}
+                        <span>Categoria:</span> {encounter.categoria.nome}
                     </p>
                     <p>
                         <span>ND do Encontro:</span> {encounter.nd_encontro}
@@ -116,15 +179,27 @@ function VerEncontro () {
                 {editChallengeState &&  <ChallengeForm
                     handleSubmit={createChallenge}
                     btnText={"Adicionar Desafio"}
-                    challengeData={encounter}
+                    encounterData={encounter}
                 />
                 }
             </div>
             
         </div>
         <h2>Desafios</h2>
-        <Container customClass="start">
-            <p>Item Exemplo</p>
+        <Container customClass="minor_section">
+        {challenges.length > 0 &&
+                challenges.map((challenge) =>
+                <ChallengeCard
+                    id={challenge.id}
+                    title={challenge.nome}
+                    nd={challenge.nd_desafio}
+                    descricao={challenge.descricao}
+                    key={challenge.id}
+                    handleRemove={deleteChallengeByID}
+                />
+                )
+            }
+        {challenges.length === 0 && <span className={styles.vazio}><p>Ainda não há Desafios ou Criaturas nesse Encontro</p></span>}
         </Container>
         </Container>
     </div>
