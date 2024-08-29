@@ -9,7 +9,7 @@ import styles from './EncounterForm.module.scss'
 
 function EncounterForm({handleSubmit, btnText, encounterData}) {
 const [categorias, setCategorias] = useState([])
-const [encounter, setEncounter] = useState(encounterData || {})
+const [encounter, setEncounter] = useState(encounterData || { categoria: { id: 1, nome: 'Combate' } })
 
 useEffect ( ()=> {
     fetch('http://localhost:5000/categories', {
@@ -38,8 +38,7 @@ const submit = (e) => {
                 id: e.target.value,
                 nome: e.target.options[e.target.selectedIndex].text
             }
-        })
-        console.log(e.target.selectedIndex)      
+        })   
     }
 
     return (
@@ -65,7 +64,7 @@ const submit = (e) => {
             title="Escolha uma Categoria"
             options={categorias}
             handleOnChange={handleSelectOnChange}
-            value={encounter.categoria ? encounter.categoria.id : '' }
+            value={encounter.categoria ? encounter.categoria.id : 1}
             
             />
            <SubmitButton text={btnText}/>
