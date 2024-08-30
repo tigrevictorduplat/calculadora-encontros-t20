@@ -1,4 +1,5 @@
 {
+  "homepage":"https://tigrvictorduplat.github.io/calculadora-encontros-t20",
   "name": "calculadora-t20",
   "version": "1.0.0",
   "private": true,
@@ -19,7 +20,9 @@
     "build": "vite build",
     "serve": "vite preview",
     "backend": "json-server --watch db.json --port 5000",
-    "test": "vitest"
+    "test": "vitest",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.1.1",
     "sass": "^1.77.8",
     "vite": "^5.4.2",
     "vitest": "^0.34.0"
