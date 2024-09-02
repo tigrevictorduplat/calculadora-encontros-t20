@@ -16,7 +16,7 @@ function App() {
      <Navbar/>
       <Container customClass='min-height' >
       <Switch>
-        <Path path="/" element={<Home/>}/>
+        <Path exact path="/" element={<Home/>}/>
         <Path path="/about-dev" element={<Dev/>}/>
         <Path path="/about-jambo" element={<JamboEditora/>}/>
         <Path path="/my-encounters" element={<Encontros/>}/>
