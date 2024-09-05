@@ -1,18 +1,11 @@
-@import url(../../styles/variables.scss);
+@import url(../../scss/my_variables.scss);
 
 .homewrap {
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4em;
-
     h1 {
-        color: var(--primary-color);
         font-size: 2em;
-        margin-bottom: 0.25em;
+        margin-bottom: 0.5em;
         span{
+            line-height: 1.75em;
             color: var(--light-accent-color);
             background-color: var(--primary-color);
             padding: 0.15em;

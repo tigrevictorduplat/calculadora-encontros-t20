@@ -72,7 +72,7 @@ function Encontros () {
         {localMessage && (
             <Message message={localMessage} type="success" timeout={localMessageTimeout}/>
         )}
-        <Container customClass="start">
+        <Container customClass="justify-content-start">
             {myencounterList.length > 0 &&
                 myencounterList.map((encounter) =>
                 <DashboardCard

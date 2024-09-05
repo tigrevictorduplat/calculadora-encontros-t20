@@ -1,6 +1,4 @@
-@import url(../../styles/variables.scss);
-
-.dashboard {
+@import url(../../scss/my_variables.scss);.dashboard {
     padding: 1em;
     border: 1px solid var(--primary-color);
     border-radius: 0.75em;

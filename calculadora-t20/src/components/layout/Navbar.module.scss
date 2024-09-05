@@ -1,6 +1,4 @@
-@import url(../../styles/variables.scss);
-
-.navbar {
+@import url(../../scss/my_variables.scss);.navbar {
     display:flex;
     justify-content: space-between;
     background-color: var(--primary-color);

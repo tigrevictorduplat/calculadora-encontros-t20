@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/calculadora-encontros-t20",
+  base: "/",
   server: {
     open: true, // Abre automaticamente no navegador ao iniciar o servidor de desenvolvimento
   },

@@ -1,6 +1,4 @@
-@import url(../../styles/variables.scss);
-
-.footer {
+@import url(../../scss/my_variables.scss);.footer {
     background-color: var(--primary-color);
    color: var(--light-accent-color);
    padding: 2em;

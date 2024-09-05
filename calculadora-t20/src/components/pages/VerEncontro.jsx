@@ -143,7 +143,7 @@ function VerEncontro () {
     <>
     {encounter.titulo?(
     <div className={styles.view_container}>
-        <Container customClass="column">
+        <Container customClass="flex-column justify-content-start">
         {message && <Message type={messageType} message={message} />}
         <div className={styles.info_block}>
             <h1>{encounter.titulo} - ND{encounter.nd_encontro} </h1>
@@ -186,7 +186,7 @@ function VerEncontro () {
             
         </div>
         <h2>Desafios</h2>
-        <Container customClass="minor_section">
+        <Container customClass="justify-content-start flex-nowrap">
         {challenges.length > 0 &&
                 challenges.map((challenge) =>
                 <ChallengeCard

@@ -1,9 +1,8 @@
-import styles from './Input.module.scss'
 
-function Input({type, title, name, placeholder, handleOnChange, value}) {
+function Input({ type, title, name, placeholder, handleOnChange, value }) {
     return (
-        <div className={styles.masterform}>
-            <label htmlFor={name}>{title}: </label>
+        <div className="mb-3">
+            <label htmlFor={name} className="form-label text-primary fw-bold">{title}:</label>
             <input
                 type={type}
                 name={name}
@@ -11,9 +10,10 @@ function Input({type, title, name, placeholder, handleOnChange, value}) {
                 placeholder={placeholder}
                 onChange={handleOnChange}
                 value={value}
-            />  
+                className="form-control border-0 border-bottom border-secondary rounded-bottom-0"
+            />
         </div>
-    )
+    );
 }
 
-export default Input
+export default Input;

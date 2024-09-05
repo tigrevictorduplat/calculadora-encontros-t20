@@ -6,7 +6,7 @@ import styles from './Navbar.module.scss'
 function Navbar() {
     return (
     <nav className={styles.navbar}>
-        <Container customClass={"nav"}>
+        <Container customClass={"justify-content-between flex-wrap w-100 px-4"}>
             <Link to="/">
             <img src={logo} alt="Calculadora de Valkaria" />
             </Link>

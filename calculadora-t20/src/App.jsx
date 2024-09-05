@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
      <Navbar/>
-      <Container customClass='min-height' >
+      <Container customClass='justify-content-between flex-wrap min-height' >
       <Switch>
         <Path exact path="/" element={<Home/>}/>
         <Path path="/about-dev" element={<Dev/>}/>
